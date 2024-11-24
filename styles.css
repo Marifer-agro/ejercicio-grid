@@ -1,0 +1,169 @@
+body {
+    background-color: #FFF7F0;
+    color: #030303;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 1500px;
+    
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #logo img {
+    width: 64px;
+    aspect-ratio: 1;
+    padding: 50px;
+    margin-block-end: 22px;
+    
+    
+  }
+  
+  #call-to-action {
+    background-color: #030303;
+    color: #FFF7F0;
+    text-decoration: none;
+    padding: 14px 45px;
+    border-radius: 1000px;
+    margin-block-end: 22px;
+    
+  }
+  
+  .text-content {
+    text-align: center;
+
+  }
+  
+  h1 {
+    font-size: 56px;
+    margin-block-end: 22px;
+    padding: 5px;
+    
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 800px, 500px; 
+    justify-content: center;
+    width: 1110px 1110px;
+    height:800px 527px;
+    margin-block-end: 10px;
+    gap: 20px;
+    padding: 50px;
+    column-width: 5px 50px;
+  }
+
+.item-1 {
+  background-color:rgba(36, 36, 170, 0.842);
+  width: 354px;
+  height: 364px;
+  text-align: left end;
+  padding-left: 15px;
+  
+
+  
+
+} 
+
+.item-2 {
+  background-color: #df6d6d;
+  width: 354px;
+  height: 364px;
+  text-align: left end;
+  padding-left: 15px;
+
+
+}
+
+
+.item-3 {
+  background-color:cyan;
+  width: 354px;
+  height: 364px;
+  text-align: left end;
+  padding-left: 15px;
+
+}
+
+
+
+  #illustration-graphic img {
+    width: 128px ;
+    height: 192px;
+    display: grid;
+    justify-content: right;
+
+  
+  }
+
+  #illustation-illustrations img {
+    width: 229.75px;
+    height: 114.87px;
+    
+  }
+
+  #illustation-photography img {
+    width: 216.65px ;
+    height: 86.66px;px ;
+
+
+  }
+
+
+ 
+
+
+  
+#women img {
+  width: 445px;
+  height: 527px;
+
+}
+  
+#encabezado h1 {
+  width: 540px;
+  align-items: center;
+  font-family: heading;
+  font-size: 56px;
+  text-align: left;
+  /*margin-block-end: 22px;*/
+
+}
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #call-to-actions{
+    background-color: #df6d6d;
+    color: #FFF7F0;
+    text-decoration: none;
+    padding: 14px 45px;
+    border-radius: 1000px;
+  }
+
+  
+
+
+  
+
+  
+ 
+
+  
+  
+    
+  
+ 
+
+  
+
+
+
+  
