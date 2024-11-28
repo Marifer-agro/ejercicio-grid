@@ -2,7 +2,7 @@ body {
     background-color: #FFF7F0;
     color: #030303;
     font-family: "Plus Jakarta Sans", sans-serif;
-    width: 1500px;
+    width: 1200px;
     
   }
   
@@ -15,8 +15,6 @@ body {
   #logo img {
     width: 64px;
     aspect-ratio: 1;
-    padding: 50px;
-    margin-block-end: 22px;
     
     
   }
@@ -27,7 +25,7 @@ body {
     text-decoration: none;
     padding: 14px 45px;
     border-radius: 1000px;
-    margin-block-end: 22px;
+    margin-block-end: 1rem;
     
   }
   
@@ -43,28 +41,39 @@ body {
     
   }
 
-
   .grid-container {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 18rem 18rem 18rem;
     grid-template-rows: 800px, 500px; 
     justify-content: center;
     width: 1110px 1110px;
     height:800px 527px;
     margin-block-end: 10px;
-    gap: 20px;
+    gap: 100px;
     padding: 50px;
     column-width: 5px 50px;
+    
+    
+  }
+
+  .grid-container img {
+    display: grid;
+    justify-content: right;
+
+
+  }
+
+  h2 {
+    text-align: left;
+    padding: 1rem;
   }
 
 .item-1 {
   background-color:rgba(36, 36, 170, 0.842);
   width: 354px;
   height: 364px;
-  text-align: left end;
-  padding-left: 15px;
-  
-
+  border-radius: 10px;
+ 
   
 
 } 
@@ -73,31 +82,29 @@ body {
   background-color: #df6d6d;
   width: 354px;
   height: 364px;
-  text-align: left end;
-  padding-left: 15px;
-
-
+  border-radius: 10px;
+  
 }
-
 
 .item-3 {
   background-color:cyan;
   width: 354px;
   height: 364px;
-  text-align: left end;
-  padding-left: 15px;
+  border-radius: 10px;
+  
 
 }
 
-
-
   #illustration-graphic img {
+    display: block;
     width: 128px ;
     height: 192px;
-    display: grid;
-    justify-content: right;
+    justify-items: right;
+    
 
-  
+
+    
+
   }
 
   #illustation-illustrations img {
@@ -110,27 +117,33 @@ body {
     width: 216.65px ;
     height: 86.66px;px ;
 
-
   }
-
-
- 
-
-
   
 #women img {
-  width: 445px;
-  height: 527px;
-
+  width: 24rem;
+  height: 25rem;
 }
   
 #encabezado h1 {
-  width: 540px;
+  width: 700px;
   align-items: center;
   font-family: heading;
-  font-size: 56px;
+  font-size: 3.5rem;
   text-align: left;
-  /*margin-block-end: 22px;*/
+  padding:.5rem;
+  margin: 1rem;
+
+}
+
+#encabezado p {
+  width: 700px;
+  align-items: center;
+  font-family: heading;
+  font-size: 1.7rem;
+  text-align:left;
+  padding: .5rem;
+  margin: 1rem;
+  
 
 }
 
@@ -138,6 +151,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .5rem;
+    margin: 1rem;
+    
+   
   }
 
   #call-to-actions{
@@ -146,24 +163,7 @@ body {
     text-decoration: none;
     padding: 14px 45px;
     border-radius: 1000px;
-  }
-
-  
-
-
-  
-
-  
- 
-
-  
-  
     
-  
+    
+  }
  
-
-  
-
-
-
-  
