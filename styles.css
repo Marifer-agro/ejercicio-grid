@@ -2,8 +2,8 @@ body {
     background-color: #FFF7F0;
     color: #030303;
     font-family: "Plus Jakarta Sans", sans-serif;
-    width: 1200px;
-    
+    width: 1300px;
+    height: 64px;
   }
   
   nav {
@@ -14,9 +14,8 @@ body {
   
   #logo img {
     width: 64px;
-    aspect-ratio: 1;
-    
-    
+    aspect-ratio: 1; 
+    margin: 30px;
   }
   
   #call-to-action {
@@ -25,20 +24,17 @@ body {
     text-decoration: none;
     padding: 14px 45px;
     border-radius: 1000px;
-    margin-block-end: 1rem;
-    
+    margin-block-end: 1rem; 
   }
   
   .text-content {
     text-align: center;
-
   }
   
   h1 {
     font-size: 56px;
     margin-block-end: 22px;
-    padding: 5px;
-    
+    padding: 5px; 
   }
 
   .grid-container {
@@ -48,42 +44,57 @@ body {
     justify-content: center;
     width: 1110px 1110px;
     height:800px 527px;
-    margin-block-end: 10px;
-    gap: 100px;
+    margin-block-end: 20px;
+    gap: 140px;
     padding: 50px;
-    column-width: 5px 50px;
-    
-    
+    column-width: 5px 50px; 
+    flex-direction: column;
   }
 
-  .grid-container img {
-    display: grid;
-    justify-content: right;
+  #img1 {
+    justify-items: right;
+    padding: 20px;
+  
+  }
+   #img2 {
+    justify-items: right;
+    padding: 20px;
+  }
 
-
+   #img3 {
+    justify-items: right;
+    padding: 20px;
   }
 
   h2 {
     text-align: left;
     padding: 1rem;
+    text-decoration: none;
   }
 
+  
 .item-1 {
   background-color:rgba(36, 36, 170, 0.842);
   width: 354px;
   height: 364px;
   border-radius: 10px;
- 
-  
-
 } 
+
+.item-1 img {
+  width: 128px ; 
+  height: 192px; 
+}
 
 .item-2 {
   background-color: #df6d6d;
   width: 354px;
   height: 364px;
-  border-radius: 10px;
-  
+  border-radius: 10px; 
+}
+
+.item-2 img {
+  width: 229.75px;
+  height: 114.87px; 
 }
 
 .item-3 {
@@ -91,34 +102,13 @@ body {
   width: 354px;
   height: 364px;
   border-radius: 10px;
-  
-
 }
 
-  #illustration-graphic img {
-    display: block;
-    width: 128px ;
-    height: 192px;
-    justify-items: right;
-    
+.item-3 img {
+  width: 86.65px ;
+    height: 166.66px;
+}
 
-
-    
-
-  }
-
-  #illustation-illustrations img {
-    width: 229.75px;
-    height: 114.87px;
-    
-  }
-
-  #illustation-photography img {
-    width: 216.65px ;
-    height: 86.66px;px ;
-
-  }
-  
 #women img {
   width: 24rem;
   height: 25rem;
@@ -132,7 +122,6 @@ body {
   text-align: left;
   padding:.5rem;
   margin: 1rem;
-
 }
 
 #encabezado p {
@@ -143,8 +132,6 @@ body {
   text-align:left;
   padding: .5rem;
   margin: 1rem;
-  
-
 }
 
   nav {
@@ -153,8 +140,6 @@ body {
     align-items: center;
     padding: .5rem;
     margin: 1rem;
-    
-   
   }
 
   #call-to-actions{
@@ -162,8 +147,161 @@ body {
     color: #FFF7F0;
     text-decoration: none;
     padding: 14px 45px;
-    border-radius: 1000px;
-    
-    
+    border-radius: 1000px; 
   }
+
+  @media (max-width: 275px) {
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      
+    }
+  
+    #logo img {
+      height: 30px;
+      text-align: center;
+    }
+  
+    #call-to-action {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+
+    #hero h1{
+      text-align: center;
+
+    }
+
+    #hero p{
+      text-align: center;
+      font-size: 1rem;
+
+    }
+    
+    }
+  
+   
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 15px;
+    }
+  
+    .item-1, .item-2, .item-3 {
+      text-align: center;
+    }
+  
+    .item.main h1 {
+      font-size: 1.5rem;
+    }
+  
+    .item.main p {
+      font-size: 1rem;
+    }
+  
+    #call-to-actions {
+      padding: 8px 16px;
+    }
+  }
+  
+
  
+
+@media (min-width:768px) and (max-width: 1024px) {
+  
+  nav {
+    padding: 20px;
+  }
+
+  #logo img {
+    height: 35px;
+  }
+
+  #call-to-action {
+    font-size: 15px;
+  }
+
+  
+  #hero {
+    padding: 40px;
+  }
+
+  #hero h1 {
+    font-size: 2.2rem;
+  }
+
+  #hero p {
+    font-size: 1.1rem;
+  }
+
+  
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .item.main h1 {
+    font-size: 1.8rem;
+  }
+
+  .item.main p {
+    font-size: 1.1rem;
+  }
+
+  #call-to-actions {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  
+  nav {
+    padding: 30px;
+  }
+
+  #logo img {
+    height: 50px;
+  }
+
+  #call-to-action {
+    font-size: 18px;
+  }
+
+  
+  #hero {
+    padding: 60px;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #hero p {
+    font-size: 1.3rem;
+  }
+
+  
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .item.main h1 {
+    font-size: 2.5rem;
+  }
+
+  .item.main p {
+    font-size: 1.2rem;
+  }
+
+  #call-to-actions {
+    padding: 12px 24px;
+  }
+}
+
+
+
+
