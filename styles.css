@@ -1,9 +1,22 @@
+:root {
+  --clr-blue: #755CDE;
+  --clr-red:#EB7565;
+  --clr-light-blue:#61C4B7;
+  --clr-black:#030303;
+  --clr-gray:#7A746E;
+  --clr-white:#FFF7F0;
+
+  --ff-body:"Plus Jakarta Sans" sans-serif;
+
+}
+
+
 body {
-    background-color: #FFF7F0;
-    color: #030303;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    width: 1300px;
-    height: 64px;
+    background-color: var(--clr-white);
+    color:var(--clr-black);
+    font-family:var(--ff-body);
+    width:1440px;
+    height: 2595px;
   }
   
   nav {
@@ -19,8 +32,8 @@ body {
   }
   
   #call-to-action {
-    background-color: #030303;
-    color: #FFF7F0;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
     text-decoration: none;
     padding: 14px 45px;
     border-radius: 1000px;
@@ -44,16 +57,19 @@ body {
     justify-content: center;
     width: 1110px 1110px;
     height:800px 527px;
-    margin-block-end: 20px;
-    gap: 140px;
+    gap: 8rem;
     padding: 50px;
     column-width: 5px 50px; 
     flex-direction: column;
+    align-items: center;
+    margin: auto;
+    
   }
 
   #img1 {
     justify-items: right;
     padding: 20px;
+    
   
   }
    #img2 {
@@ -69,24 +85,29 @@ body {
   h2 {
     text-align: left;
     padding: 1rem;
-    text-decoration: none;
+   
   }
 
   
 .item-1 {
-  background-color:rgba(36, 36, 170, 0.842);
+  background-color:var(--clr-blue);
   width: 354px;
   height: 364px;
   border-radius: 10px;
+  text-decoration: none;
 } 
+
+
+
 
 .item-1 img {
   width: 128px ; 
-  height: 192px; 
+  height: 192px;
+
 }
 
 .item-2 {
-  background-color: #df6d6d;
+  background-color: var(--clr-red);
   width: 354px;
   height: 364px;
   border-radius: 10px; 
@@ -98,7 +119,7 @@ body {
 }
 
 .item-3 {
-  background-color:cyan;
+  background-color:var(--clr-light-blue);
   width: 354px;
   height: 364px;
   border-radius: 10px;
@@ -143,165 +164,149 @@ body {
   }
 
   #call-to-actions{
-    background-color: #df6d6d;
-    color: #FFF7F0;
+    background-color:var(--clr-red);
+    color: var(--clr-white);
     text-decoration: none;
     padding: 14px 45px;
     border-radius: 1000px; 
   }
 
-  @media (max-width: 275px) {
-
-    nav {
-      flex-direction: column;
-      align-items: center;
-      padding: 15px;
-      
-    }
-  
-    #logo img {
-      height: 30px;
-      text-align: center;
-    }
-  
-    #call-to-action {
-      font-size: 14px;
-      text-align: center;
-    }
-  
-
-    #hero h1{
-      text-align: center;
-
-    }
-
-    #hero p{
-      text-align: center;
-      font-size: 1rem;
-
-    }
+  article{
+    background-color:var(--clr-black);
+    color: var(--clr-white);
+    border-radius: 10px;
+    padding-block: 4rem;
+    padding-inline: 4.625rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.625rem;
     
-    }
-  
-   
-    .grid-container {
-      grid-template-columns: 1fr;
-      gap: 15px;
-      padding: 15px;
-    }
-  
-    .item-1, .item-2, .item-3 {
-      text-align: center;
-    }
-  
-    .item.main h1 {
-      font-size: 1.5rem;
-    }
-  
-    .item.main p {
-      font-size: 1rem;
-    }
-  
-    #call-to-actions {
-      padding: 8px 16px;
-    }
   }
   
-
- 
-
-@media (min-width:768px) and (max-width: 1024px) {
+  .text-center {
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+  }
   
+  .button {
+    background-color: var(--clr-red);
+    color: inherit;
+    padding-block: 0.875rem;
+    padding-inline: 2.75rem;
+    border-radius: 100vw;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    width: fit-content;
+  }
+
+  /*mobile - 375px*/
+@media (max-width: 375px) {
   nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #logo img {
+    width: 120px;
+  }
+
+  #hero {
+    padding: 30px 15px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .item-1, .item-2, .item-3 {
+    padding: 15px;
+  }
+
+  #illustration-graphic h2, #illustation-illustrations h2, #illustation-photography h2 {
+    font-size: 1.2em;
+  }
+
+  #encabezado h1 {
+    font-size: 2em;
+  }
+
+  #encabezado p {
+    font-size: 1em;
+  }
+
+  .button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #hero {
+    padding: 40px 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-1, .item-2, .item-3 {
     padding: 20px;
   }
 
-  #logo img {
-    height: 35px;
+  #illustration-graphic h2, #illustation-illustrations h2, #illustation-photography h2 {
+    font-size: 1.4em;
   }
 
-  #call-to-action {
-    font-size: 15px;
+  #encabezado h1 {
+    font-size: 2.2em;
   }
 
-  
-  #hero {
-    padding: 40px;
+  #encabezado p {
+    font-size: 1.1em;
   }
 
-  #hero h1 {
-    font-size: 2.2rem;
-  }
-
-  #hero p {
-    font-size: 1.1rem;
-  }
-
-  
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .item.main h1 {
-    font-size: 1.8rem;
-  }
-
-  .item.main p {
-    font-size: 1.1rem;
-  }
-
-  #call-to-actions {
-    padding: 10px 20px;
+  .button {
+    padding: 12px 25px;
   }
 }
 
+/* Desktop - 1440px */
 @media (min-width: 1440px) {
-  
   nav {
+    padding: 30px 50px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-1, .item-2, .item-3 {
     padding: 30px;
   }
 
-  #logo img {
-    height: 50px;
+  #illustration-graphic h2, #illustation-illustrations h2, #illustation-photography h2 {
+    font-size: 1.8em;
   }
 
-  #call-to-action {
-    font-size: 18px;
+  #encabezado h1 {
+    font-size: 3em;
   }
 
-  
-  #hero {
-    padding: 60px;
+  #encabezado p {
+    font-size: 1.3em;
   }
 
-  #hero h1 {
-    font-size: 3rem;
-  }
-
-  #hero p {
-    font-size: 1.3rem;
-  }
-
-  
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-
-  .item.main h1 {
-    font-size: 2.5rem;
-  }
-
-  .item.main p {
-    font-size: 1.2rem;
-  }
-
-  #call-to-actions {
-    padding: 12px 24px;
+  .button {
+    padding: 15px 30px;
   }
 }
-
-
-
-
